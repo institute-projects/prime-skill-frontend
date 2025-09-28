@@ -21,7 +21,7 @@ const StudentDetailPage =() => {
   const navigate = useNavigate();
 
 
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = 'https://api.primeskillviim.in';
   const token = localStorage.getItem('token');
   const decodedFullName = fullName ? decodeURIComponent(fullName) : '';
   const parsedPassYear = passYear ? parseInt(passYear) : 0;

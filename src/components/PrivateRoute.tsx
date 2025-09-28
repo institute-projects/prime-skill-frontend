@@ -6,7 +6,7 @@ interface PrivateRouteProps {
   children: React.ReactNode;
 }
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = 'https://api.primeskillviim.in';
 
 const PrivateRoute: React.FC<PrivateRouteProps> = ({ children }) => {
   const { isAuthenticated, token, logout } = useAuth();
