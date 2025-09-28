@@ -14,6 +14,9 @@ const AuthContext = createContext<AuthContextProps | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [token, setToken] = useState<string | null>(localStorage.getItem("token"));
+  console.log('API_URL:', API_URL); // Add this for debugging
+    console.log('Full URL:', `${API_URL}/authenticate`); // Add this for debugging
+
 
   useEffect(() => {
     if (token) {
