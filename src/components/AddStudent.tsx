@@ -480,7 +480,7 @@ const AddStudent = () => {
             <div className="flex justify-end space-x-4">
               <button
                 type="button"
-                onClick={onBack}
+                onClick={handleBackToDashboard}
                 className="px-6 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg font-medium transition-colors duration-200"
                 disabled={isLoading}
               >
