@@ -264,17 +264,13 @@ const StudentDetailPage =() => {
             
             {activeTab === 'details' && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
+                <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Enroolment No.</label>
-                  <input
-                    type="text"
-                    value={editedStudent.studentId}
-                    disabled={!isEditing}
-                    onChange={(e) =>
-                      setEditedStudent((prev) => (prev ? { ...prev, studentId: e.target.value } : prev))
-                    }
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg disabled:bg-gray-50 disabled:text-gray-500 focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  />
+                  <h1
+                    className="w-full px-3 py-2 border border-gray-400 rounded-lg disabled:bg-gray-50 disabled:text-gray-500 focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                       {editedStudent.studentId}
+                    </h1>
+                
                 </div>
 
                 <div>
